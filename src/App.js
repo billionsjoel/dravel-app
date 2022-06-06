@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 import Splash from './pages/splash';
 import HomePage from './pages/homePage';
+import DetailsPage from './pages/detailsPage';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             element={<Navigate to="/" />}
           />
           <Route path="/home" element={<HomePage />} />
+          <Route path="/details" element={<DetailsPage />} />
         </Routes>
       </BrowserRouter>
     </div>
