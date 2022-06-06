@@ -8,6 +8,7 @@ import {
 import Splash from './pages/splash';
 import HomePage from './pages/homePage';
 import DetailsPage from './pages/detailsPage';
+import ReservationPage from './pages/reservation';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           />
           <Route path="/home" element={<HomePage />} />
           <Route path="/details" element={<DetailsPage />} />
+          <Route path="/reservation" element={<ReservationPage />} />
         </Routes>
       </BrowserRouter>
     </div>
