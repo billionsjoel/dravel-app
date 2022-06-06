@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# DRAVEL APP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The project you are going to build for the Final Capstone Project is based on an app to book an appointment to try a motorcycle. You should follow the given design of the website, but you must personalize the content, i.e., instead of booking an appointment to try a motorcycle, you can build an app to book an appointment with a doctor, or reserve an online class with a teacher. This is highly encouraged since having unique projects in your portfolio will help you stand out while looking for jobs.
 
-## Available Scripts
+## Views
 
-In the project directory, you can run:
+> | -   | Home Page                        | -   | Dashboard                          | -   | Reservation                           | -   |
+> | --- | ---------------------------------- | --- | ----------------------------------- | --- | ----------------------------------- | --- |
+> | -   | ![screenshot](app-screenshot1.png) | -   | ![screenshot](app-screenshot2.png) | -   | ![screenshot](app-screenshot3.png) | -   |
 
-### `npm start`
+## Live App link
+- Here is the [link](https://microverse.org) to the live app `https://dravel-app.herokuapp.com/`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## objectives
+Apply technical knowledge and skills gained in previous modules in a complex project.
+Understand pros and cons of different approaches of connecting Ruby on Rails back-end with React front-end.
+Understand principles of Ruby on Rails and React frameworks.
+Apply Ruby best practices and language style guides in code.
+Apply RoR best practices and language style guides in code (e.g. thin controllers).
+Apply JavaScript best practices and language style guides in code.
+Apply React best practices and language style guides in code.
+Learn about and practice giving constructive feedback to teammates.
+Perform a code review for a team member.
+Use the "Review change"" feature from GitHub.
+Write clear, professional, and respectful review comments for other team members.
+Explain "why" a change is requested when giving a code review.
+Plan a 2+ week project with no interim Microverse-set milestones and submit it on time.
+Apply knowledge of setting working agreements to set group project teams up for success.
+Independently implement best practices for group agreements to improve teamwork in larger group project.
+Demonstrate ability to apply best practices of communication for resolving teamwork challenges.
+Understand that respect is the foundation of strong relationship-building with teammates.
+Show up throughout group projects as a reliable and committed team member who communicates and manages your time effectively.
+Recognize the importance of investing in good working relationships with teammates.
+Understand principles of strong teamwork (being reliable, committed, and consistent) and how to apply them in group projects.
+Recognize the value of making equal contributions to group projects to produce the best outcome.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Built With
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React
+- Test
+- Bootstrap
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Make sure you have node installed in your system.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clone this repository by running `https://github.com/billionsjoel/dravel-app.git` in your command line.
 
-### `npm run eject`
+Navigate to the repository by running `cd dravel`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Clone the repo and run `npm install` in the command line to install the dependencies.
+- run `npm start`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Author
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+👤 **Atugonza Joel Billions**
 
-## Learn More
+- GitHub: [@billionsjoel](https://github.com/billionsjoel)
+- LinkedIn: [Billionsjoel](https://www.linkedin.com/in/billionsjoel/)
+👤 **Abdesalem**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- GitHub: [@billionsjoel](https://github.com/billionsjoel)
+- LinkedIn: [Billionsjoel](https://www.linkedin.com/in/billionsjoel/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+👤 **Jos Kalenda**
 
-### Code Splitting
+- GitHub: [@billionsjoel](https://github.com/billionsjoel)
+- LinkedIn: [Billionsjoel](https://www.linkedin.com/in/billionsjoel/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+👤 **Aneikan Udo**
 
-### Analyzing the Bundle Size
+- GitHub: [@billionsjoel](https://github.com/billionsjoel)
+- LinkedIn: [Billionsjoel](https://www.linkedin.com/in/billionsjoel/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🤝 Contributing
 
-### Making a Progressive Web App
+Contributions, issues, and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Feel free to check the [issues page](https://github.com/billionsjoel/budgety/issues).
 
-### Advanced Configuration
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Give a ⭐️ if I like this project!
 
-### Deployment
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Original design idea by [Murat Korkmaz](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=) on Behance.
+- Hat tip to Microverse
