@@ -3,9 +3,10 @@ import {
   Route,
   Routes,
   BrowserRouter,
-  Navigate
+  Navigate,
 } from 'react-router-dom';
 import Splash from './pages/splash';
+import HomePage from './pages/homePage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             path="*"
             element={<Navigate to="/" />}
           />
+          <Route path="/home" element={<HomePage />} />
         </Routes>
       </BrowserRouter>
     </div>
