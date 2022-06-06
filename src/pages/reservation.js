@@ -3,7 +3,7 @@ function ReservationPage() {
     <div>
       Reservation page
     </div>
-  )
+  );
 }
 
 export default ReservationPage;

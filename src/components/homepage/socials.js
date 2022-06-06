@@ -3,7 +3,7 @@ function Socials() {
     <div>
       Socials
     </div>
-  )
+  );
 }
 
 export default Socials;

@@ -3,7 +3,7 @@ function ItemsConainer() {
     <div>
       ItemsConainer
     </div>
-  )
+  );
 }
 
 export default ItemsConainer;

@@ -1,9 +1,7 @@
 function DetailsPage() {
   return (
-    <div>
-
-    </div>
-  )
+    <div />
+  );
 }
 
 export default DetailsPage;
