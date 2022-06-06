@@ -1,5 +1,14 @@
-function splash() {
-  return <div>splash</div>;
+import Login from '../components/login';
+
+function Splash() {
+	return (
+		<>
+			<div>
+				<p> This is the splash page </p>
+				<Login />
+			</div>
+		</>
+	);
 }
 
-export default splash;
+export default Splash;
