@@ -1,3 +1,5 @@
+import '../scss/nav.scss';
+
 function Navigation() {
   return (
     <div className="menu-items">

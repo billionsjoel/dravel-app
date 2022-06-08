@@ -4,7 +4,7 @@ import ItemsContainer from '../components/homepage/itemsContainer';
 function HomePage() {
   return (
     <>
-      <div className="home">
+      <div className="home-container">
         <div className="menu">
           <Navigation />
         </div>
