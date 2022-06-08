@@ -1,0 +1,10 @@
+.cover {
+	height: 100vh;
+	background-color: orange;
+
+	& > .nav {
+		display: flex;
+		justify-content: space-between;
+		padding: 2rem;
+	}
+}
