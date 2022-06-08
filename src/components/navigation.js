@@ -1,7 +1,11 @@
 function Navigation() {
   return (
-    <div>
-      nav
+    <div className="menu-items">
+      <ul>
+        <li>Destinations</li>
+        <li>Trips</li>
+        <li>Reserve</li>
+      </ul>
     </div>
   );
 }
