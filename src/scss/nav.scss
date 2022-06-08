@@ -33,12 +33,20 @@
 
 		& > ul {
 			display: flex;
-			justify-content: space-center;
+			justify-content: center;
 			gap: 1rem;
 
 			& > li {
 				list-style: none;
 			}
+		}
+
+		& > span {
+			font-size: 12px;
+			display: flex;
+			justify-content: center;
+			padding: 0 1rem 2rem 1rem;
+			color: #aaa9a9;
 		}
 	}
 }
