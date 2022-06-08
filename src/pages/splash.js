@@ -17,7 +17,7 @@ function Splash() {
         <div className="content">
           <div className="heading">Dravel</div>
           <div className="cta">
-            <span className="fa fa-cog" aria-hidden="true" />
+            <span className="fa fa-cog p-2" aria-hidden="true" />
             <Login />
           </div>
         </div>
