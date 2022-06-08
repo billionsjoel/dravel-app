@@ -12,6 +12,13 @@
 		& > li {
 			list-style: none;
 			gap: 1rem;
+			width: 20vh;
+			padding: 1rem;
+			text-transform: uppercase;
+
+			&:hover {
+				background-color: darken($color: lightblue, $amount: 10);
+			}
 		}
 	}
 }
