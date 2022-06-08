@@ -43,10 +43,14 @@
 			justify-content: center;
 			align-items: center;
 			margin: 6rem auto;
+			transform: scale(1);
+			transition: all 1s ease-in-out;
 
 			&:hover {
 				background-color: darken($color: #75b251, $amount: 10);
 				cursor: pointer;
+				transform: scale(1.1);
+				transition: all 1s ease-in-out;
 			}
 		}
 	}
