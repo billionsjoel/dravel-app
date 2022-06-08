@@ -15,7 +15,10 @@ function Splash() {
           </div>
         </div>
         <div className="content">
-          <Login />
+          <div className="heading">Dravel</div>
+          <div className="cta">
+            <Login />
+          </div>
         </div>
         <div className="footer">&copy; Copyright Dravel 2022</div>
       </div>

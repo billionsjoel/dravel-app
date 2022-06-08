@@ -1,6 +1,6 @@
 .cover {
 	height: 100vh;
-	background-color: orange;
+	background-image: linear-gradient(321deg, #ffb401, #ffb401);
 
 	& > .nav {
 		display: flex;
@@ -10,7 +10,32 @@
 		& > .logo {
 			display: flex;
 			justify-content: center;
-      gap: 1rem;
+			gap: 1rem;
+		}
+	}
+
+	& > .content {
+		text-align: center;
+    margin-top: 6rem;
+
+		& > .heading {
+			line-height: 1rem;
+			font-size: 6rem;
+			letter-spacing: 1rem;
+			padding: 1rem;
+			color: #ffffff;
+		}
+
+		& > .cta {
+			color: #ffffff;
+			border-radius: 2rem;
+			background-color: #75b251;
+			width: 15rem;
+			height: 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 6rem auto;
 		}
 	}
 }
