@@ -1,8 +1,12 @@
 function ItemsConainer() {
   return (
-    <div>
-      ItemsConainer
-    </div>
+    <>
+      <div className="items-container">
+        <div className="item-heading">
+          <h1>LATEST DISCOVERIES</h1>
+        </div>
+      </div>
+    </>
   );
 }
 
