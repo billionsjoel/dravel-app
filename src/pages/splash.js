@@ -24,14 +24,10 @@ function Splash() {
           </header>
 
           <main role="main" className="inner cover">
-            <h1 className="cover-heading">Cover your page.</h1>
+            <h1 className="cover-heading">Dravel</h1>
+            <p className="lead">Discover while you Travel.</p>
             <p className="lead">
-              Cover is a one-page template for building simple and beautiful
-              home pages. Download, edit the text, and add your own fullscreen
-              background photo to make it your own.
-            </p>
-            <p className="lead">
-              <a href="#" className="btn btn-lg btn-secondary">
+              <a href="#" className="btn btn-md btn-block btn-warning">
                 <Login />
               </a>
             </p>
@@ -40,12 +36,12 @@ function Splash() {
           <footer className="mastfoot mt-auto">
             <div className="inner">
               <p>
-                Cover template for
+                Copyright &copy;
                 {' '}
-                <a href="https://getbootstrap.com/">Bootstrap</a>
+                <a href="https://getbootstrap.com/">Dravel</a>
                 , by
                 {' '}
-                <a href="https://twitter.com/mdo">@mdo</a>
+                <a href="https://twitter.com/mdo">@dravel</a>
                 .
               </p>
             </div>
