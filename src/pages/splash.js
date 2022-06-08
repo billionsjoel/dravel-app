@@ -7,8 +7,8 @@ function Splash() {
       <div className="cover">
         <div className="nav">
           <div className="logo">
-            <i className="fa-solid fa-bars" />
-            Dravel
+            <span className="fa-solid fa-bars"> </span>
+            <span>Dravel</span>
           </div>
           <div className="search">
             <i className="fa fa-search" aria-hidden="true" />
@@ -17,9 +17,7 @@ function Splash() {
         <div className="content">
           <Login />
         </div>
-        <div className="footer">
-          &copy; Copyright Dravel 2022
-        </div>
+        <div className="footer">&copy; Copyright Dravel 2022</div>
       </div>
     </>
   );

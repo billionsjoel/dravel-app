@@ -5,6 +5,12 @@
 	& > .nav {
 		display: flex;
 		justify-content: space-between;
-		padding: 2rem;
+		padding: 4rem;
+
+		& > .logo {
+			display: flex;
+			justify-content: center;
+      gap: 1rem;
+		}
 	}
 }
