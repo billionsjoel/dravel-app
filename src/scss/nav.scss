@@ -4,7 +4,8 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: lightblue;
+	background-color: rgb(253, 253, 253);
+	border-right: 1px solid rgb(230, 228, 228);
 
 	& > .logo {
 		padding: 1rem;
@@ -22,7 +23,21 @@
 			text-transform: uppercase;
 
 			&:hover {
-				background-color: darken($color: lightblue, $amount: 10);
+				background-color: darken($color: rgb(253, 253, 253), $amount: 8);
+			}
+		}
+	}
+
+	& > .socials {
+		width: 20vh;
+
+		& > ul {
+			display: flex;
+			justify-content: space-center;
+			gap: 1rem;
+
+			& > li {
+				list-style: none;
 			}
 		}
 	}
