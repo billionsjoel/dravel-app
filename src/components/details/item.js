@@ -1,4 +1,4 @@
-import React from 'react';
+import Socials from '../homepage/socials';
 
 function Item() {
   return (
@@ -9,6 +9,14 @@ function Item() {
         height={500}
         width={500}
       />
+      <div className="image-title">Discovery One</div>
+      <div className="description">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
+        voluptatum veritatis accusamus! Beatae eum, quam sit reiciendis, quos
+        voluptates fugiat voluptas totam eos quibusdam aspernatur minima,
+        quisquam saepe eius inventore!
+      </div>
+      <Socials />
     </div>
   );
 }
