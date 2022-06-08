@@ -17,6 +17,7 @@ function Splash() {
         <div className="content">
           <div className="heading">Dravel</div>
           <div className="cta">
+            <i className="fa-solid fa-gear" />
             <Login />
           </div>
         </div>
