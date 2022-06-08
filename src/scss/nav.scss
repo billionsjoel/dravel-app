@@ -6,6 +6,11 @@
 	align-items: center;
 	background-color: lightblue;
 
+	& > .logo {
+		padding: 1rem;
+		font-size: 2rem;
+	}
+
 	& > ul {
 		padding: 2rem;
 
