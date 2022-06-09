@@ -10,6 +10,8 @@ import Splash from './pages/splash';
 import HomePage from './pages/homePage';
 import DetailsPage from './pages/detailsPage';
 import ReservationPage from './pages/reservation';
+import AddPage from './pages/addPage';
+import DeletePage from './pages/deletePage';
 /* eslint-disable */
 
 function App() {
@@ -33,6 +35,8 @@ function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/details" element={<DetailsPage />} />
               <Route path="/reservation" element={<ReservationPage />} />
+              <Route path="/add" element={<AddPage />} />
+              <Route path="/delete" element={<DeletePage />} />
               </>
         }
         </Routes>

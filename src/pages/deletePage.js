@@ -1,11 +1,10 @@
-import React from 'react'
-
 const Deletepage = () => {
-    return (
-        <div>
-
-        </div>
-    )
-}
+  console.log('hi');
+  return (
+    <div>
+      delete page
+    </div>
+  );
+};
 
 export default Deletepage;

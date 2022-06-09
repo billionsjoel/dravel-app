@@ -1,9 +1,10 @@
 function AddPage() {
-    return (
-        <div>
-
-        </div>
-    )
+  console.log('hi');
+  return (
+    <div>
+      addPage
+    </div>
+  );
 }
 
 export default AddPage;
