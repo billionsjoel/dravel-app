@@ -1,7 +1,9 @@
 .image {
-	max-width: 500px;
 	color: grey;
 	font-weight: 400;
+	border: 1px solid red;
+	display: flex;
+	flex-direction: column;
 
 	& > .image-title {
 		text-align: center;

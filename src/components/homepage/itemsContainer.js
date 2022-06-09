@@ -5,12 +5,14 @@ function ItemsConainer() {
   return (
     <>
       <div className="items-container">
-        <div className="item-heading">
+        <div className="items-heading">
           <h1>LATEST DISCOVERIES</h1>
           <p>Please select a discovery</p>
         </div>
         <div className="items">
           <div className="images">
+            <Item />
+            <Item />
             <Item />
           </div>
         </div>
