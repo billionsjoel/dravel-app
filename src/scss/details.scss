@@ -20,7 +20,7 @@
 			margin-top: 4rem;
 			font-size: 2rem;
 			text-align: right;
-      padding: 3rem;
+			padding: 3rem;
 		}
 
 		& > .fee {
@@ -30,6 +30,14 @@
 			padding: 1rem;
 			margin-top: 0.5rem;
 			border-radius: 5px;
+		}
+
+		& > .btn {
+			border-radius: 2rem;
+			height: 4rem;
+			width: 20rem;
+			text-align: center;
+			padding: 1rem;
 		}
 	}
 }
