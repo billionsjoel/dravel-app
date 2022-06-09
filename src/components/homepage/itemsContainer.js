@@ -8,7 +8,7 @@ function ItemsContainer() {
       {
       /* eslint-disable */
         items.map((item,index) => (
-          <Link key={index} to="/details">
+          <Link key={index} to="/details" state={{ item }}>
             {item.name}
           </Link>
         ))
