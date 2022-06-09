@@ -1,7 +1,11 @@
+import Navigation from '../components/navigation';
+
 function DetailsPage() {
   return (
     <>
-      <div className="details">Details page</div>
+      <div className="details">
+        <Navigation />
+      </div>
     </>
   );
 }
