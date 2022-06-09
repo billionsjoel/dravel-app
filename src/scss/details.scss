@@ -1,0 +1,12 @@
+.details {
+	display: flex;
+	gap: 4rem;
+
+	& > .image {
+		& > .details-img {
+			border-radius: 0px !important;
+			height: 50rem;
+			width: 60rem;
+		}
+	}
+}
