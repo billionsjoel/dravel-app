@@ -2,15 +2,14 @@
 	margin: auto;
 	width: 100%;
 	flex: 2;
-	background-color: lightblue;
+	margin-top: 4rem;
 
 	& > .items-heading {
 		text-align: center;
 	}
 
 	& > .items {
-		background-color: gold;
-		margin-left: 2rem;
+		margin-left: 0.1rem;
 
 		& > .images {
 			display: flex;
