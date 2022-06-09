@@ -1,6 +1,8 @@
 function DetailsPage() {
   return (
-    <div />
+    <>
+      <div className="details">Details page</div>
+    </>
   );
 }
 
