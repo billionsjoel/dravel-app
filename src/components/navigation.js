@@ -1,7 +1,11 @@
+import { Link } from 'react-router-dom';
+
 function Navigation() {
   return (
     <div>
-      nav
+      <Link to="/reservation">
+        reservation
+      </Link>
     </div>
   );
 }
