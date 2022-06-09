@@ -23,6 +23,14 @@ function DetailsPage() {
             <span>Booking</span>
             <span>$1000</span>
           </div>
+          <div className="fee">
+            <span>Ticket</span>
+            <span>$1000</span>
+          </div>
+          <div className="fee">
+            <span>Duration</span>
+            <span>40 Days</span>
+          </div>
         </div>
       </div>
     </>
