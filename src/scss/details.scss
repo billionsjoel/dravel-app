@@ -35,13 +35,15 @@
 		& > .btn {
 			border-radius: 2rem;
 			height: 4rem;
-			width: 20rem;
+			width: 15rem;
 			text-align: center;
 			padding: 1rem;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			gap: 1rem;
+      background-color: #75b251;
+      border: none;
 		}
 	}
 }
