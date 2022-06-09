@@ -1,4 +1,5 @@
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 function ItemsContainer() {
   const items = useSelector((state) => state.dravelReducer.items);
@@ -7,9 +8,9 @@ function ItemsContainer() {
       {
       /* eslint-disable */
         items.map((item,index) => (
-          <div key={index} >
+          <Link key={index} to="/details">
             {item.name}
-          </div>
+          </Link>
         ))
       }
     </div>

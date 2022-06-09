@@ -3,6 +3,8 @@ const initialState = {
   user: '',
   items: [{
     name: 'item 1',
+  }, {
+    name: 'item 2',
   }],
 };
 
