@@ -1,57 +1,57 @@
 .details {
-	display: flex;
-	gap: 4rem;
+  display: flex;
+  gap: 4rem;
 
-	& > .image {
-		& > .details-img {
-			border-radius: 0px !important;
-			height: 50rem;
-			width: 60rem;
-		}
-	}
+  & > .image {
+    & > .details-img {
+      border-radius: 0 !important;
+      height: 50rem;
+      width: 60rem;
+    }
+  }
 
-	& > .booking-section {
-		width: 100%;
-		margin-right: 2rem;
-		margin-left: 4rem;
+  & > .booking-section {
+    width: 100%;
+    margin-right: 2rem;
+    margin-left: 4rem;
 
-		& > .title {
-			font-weight: 900;
-			margin-top: 4rem;
-			font-size: 2rem;
-			text-align: right;
-			padding: 3rem 0 3rem 3rem;
+    & > .title {
+      font-weight: 900;
+      margin-top: 4rem;
+      font-size: 2rem;
+      text-align: right;
+      padding: 3rem 0 3rem 3rem;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
 
-      & > .sub-title{
+      & > .sub-title {
         font-weight: 300;
         font-size: 1.4rem;
       }
-		}
+    }
 
-		& > .fee {
-			display: flex;
-			justify-content: space-between;
-			background-color: #e0dfdf;
-			padding: 1rem;
-			margin-top: 0.5rem;
-			border-radius: 5px;
-		}
+    & > .fee {
+      display: flex;
+      justify-content: space-between;
+      background-color: #e0dfdf;
+      padding: 1rem;
+      margin-top: 0.5rem;
+      border-radius: 5px;
+    }
 
-		& > .btn {
-			border-radius: 2rem;
-			height: 4rem;
-			width: 15rem;
-			text-align: center;
-			padding: 1rem;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			gap: 1rem;
+    & > .btn {
+      border-radius: 2rem;
+      height: 4rem;
+      width: 15rem;
+      text-align: center;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
       background-color: #75b251;
       border: none;
-		}
-	}
+    }
+  }
 }
