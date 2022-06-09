@@ -1,4 +1,7 @@
-function Socials() {
+import '../../scss/socials.scss';
+
+function Socials()
+{
   return (
     <div className="socials">
       <ul>
