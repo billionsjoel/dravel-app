@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import { useDispatch } from 'react-redux';
 import { addItem } from '../redux/dravelStore/dravelStore';
+import Navigation from '../components/navigation';
 
 function AddPage() {
   const item = useRef();
@@ -13,6 +14,7 @@ function AddPage() {
   return (
     <div>
       <h2>addPage</h2>
+      <Navigation />
       <form onSubmit={handleAdd}>
         <input type="text" ref={item} />
         <button className="cta" type="submit">
