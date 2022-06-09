@@ -4,7 +4,7 @@ const DELETEITEM = 'DELETE_ITEM';
 const ADDRESERVATION = 'ADD_RESERVATION';
 
 const initialState = {
-  user: 'saloma',
+  user: '',
   items: [{
     name: 'item 1',
   }, {
