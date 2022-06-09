@@ -39,7 +39,7 @@ function Splash() {
            :
            <form onSubmit={handleSubmit}>
              <input type="text" ref={userName} />
-             <button className="cta" type="submit" onClick={handleClick}>
+             <button className="cta" type="submit">
                <span className="fa fa-cog p-2" aria-hidden="true" />
                <Login />
              </button>
