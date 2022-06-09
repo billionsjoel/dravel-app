@@ -1,7 +1,6 @@
 import '../../scss/socials.scss';
 
-function Socials()
-{
+function Socials() {
   return (
     <div className="socials">
       <ul>
