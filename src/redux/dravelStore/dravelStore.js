@@ -1,15 +1,17 @@
 const LOGINUSER = 'LOGIN_USER';
 const ADDITEM = 'ADD_ITEM';
 const DELETEITEM = 'DELETE_ITEM';
+const ADDRESERVATION = 'ADD_RESERVATION';
 
 const initialState = {
-  user: '',
+  user: 'saloma',
   items: [{
     name: 'item 1',
   }, {
     name: 'item 2',
   }],
   reservations: [{
+    user: 'saloma',
     itemName: 'item 1',
     date: '2020-20-13',
     city: 'alger',
@@ -31,6 +33,11 @@ export const deleteItem = (payload) => ({
   payload,
 });
 
+export const addreservation = (payload) => ({
+  type: ADDRESERVATION,
+  payload,
+});
+
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case LOGINUSER:
@@ -38,6 +45,9 @@ const reducer = (state = initialState, action) => {
 
     case ADDITEM:
       return { ...state, items: [...state.items, { name: action.payload }] };
+
+    case ADDRESERVATION:
+      return { ...state, reservations: [...state.reservations, action.payload] };
 
     case DELETEITEM:
       /* eslint-disable */
