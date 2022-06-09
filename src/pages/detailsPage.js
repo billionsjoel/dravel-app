@@ -31,7 +31,10 @@ function DetailsPage() {
             <span>Duration</span>
             <span>40 Days</span>
           </div>
-          <div className="btn btn-success mt-4">Reserve</div>
+          <div className="btn btn-success mt-4">
+            <i className="fa fa-floppy-o" aria-hidden="true" />
+            Reserve
+          </div>
         </div>
       </div>
     </>
