@@ -6,6 +6,9 @@ function Navigation() {
       <Link to="/reservation">
         reservation
       </Link>
+      <Link to="/reserve">
+        Reserve
+      </Link>
       <Link to="/add">
         Add item
       </Link>
