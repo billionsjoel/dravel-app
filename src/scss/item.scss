@@ -1,27 +1,26 @@
 .image {
-	color: grey;
-	font-weight: 400;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin-top: 4rem;
+  color: grey;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
 
-	& > img {
-		padding: 1rem;
-		border-radius: 100%;
-		object-fit: cover;
-		background-position: top;
-		background-image: cover;
-	}
+  & > img {
+    padding: 1rem;
+    border-radius: 100%;
+    object-fit: cover;
+    background-position: top;
+  }
 
-	& > .image-title {
-		text-align: center;
-		padding: 1rem;
-		font-weight: 600;
-	}
+  & > .image-title {
+    text-align: center;
+    padding: 1rem;
+    font-weight: 600;
+  }
 
-	& > .description {
-		padding: 1rem;
-	}
+  & > .description {
+    padding: 1rem;
+  }
 }
