@@ -17,7 +17,13 @@ function DetailsPage() {
             width={500}
           />
         </div>
-        <div className="booking-section"> Booking details </div>
+        <div className="booking-section">
+          <div className="title">Product heading</div>
+          <div className="fee">
+            <span>Booking</span>
+            <span>$1000</span>
+          </div>
+        </div>
       </div>
     </>
   );
