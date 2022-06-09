@@ -31,6 +31,7 @@ function DetailsPage() {
             <span>Duration</span>
             <span>40 Days</span>
           </div>
+          <div className="btn btn-success">Reserve</div>
         </div>
       </div>
     </>
