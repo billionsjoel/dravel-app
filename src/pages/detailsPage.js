@@ -18,7 +18,10 @@ function DetailsPage() {
           />
         </div>
         <div className="booking-section">
-          <div className="title">Product heading</div>
+          <div className="title">
+            Product heading
+            <span className="sub-title">Product details</span>
+          </div>
           <div className="fee">
             <span>Booking</span>
             <span>$1000</span>

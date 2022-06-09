@@ -20,7 +20,15 @@
 			margin-top: 4rem;
 			font-size: 2rem;
 			text-align: right;
-			padding: 3rem;
+			padding: 3rem 0 3rem 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      & > .sub-title{
+        font-weight: 300;
+        font-size: 1.4rem;
+      }
 		}
 
 		& > .fee {
