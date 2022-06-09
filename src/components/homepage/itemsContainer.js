@@ -1,4 +1,5 @@
 import Item from '../details/item';
+import '../../scss/items.scss';
 
 function ItemsConainer() {
   return (
