@@ -1,5 +1,10 @@
 const LoginUSER = 'Login_USER';
-const initialState = { user: '' };
+const initialState = {
+  user: '',
+  items: [{
+    name: 'item 1',
+  }],
+};
 
 export const loginUser = (payload) => ({
   type: LoginUSER,
