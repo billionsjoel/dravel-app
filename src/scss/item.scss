@@ -1,3 +1,11 @@
-.item-container {
+.image {
 	max-width: 500px;
+	color: grey;
+	font-weight: 400;
+
+	& > .image-title {
+		text-align: center;
+		padding: 1rem;
+		font-weight: 600;
+	}
 }
