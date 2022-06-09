@@ -1,4 +1,5 @@
 import Socials from '../homepage/socials';
+import '../../scss/item.scss';
 
 function Item() {
   return (
