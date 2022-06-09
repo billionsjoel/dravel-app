@@ -9,6 +9,11 @@ const initialState = {
   }, {
     name: 'item 2',
   }],
+  reservation: [{
+    itemName: 'item 1',
+    date: '2020-20-13',
+    city: 'alger',
+  }],
 };
 
 export const loginUser = (payload) => ({
@@ -43,7 +48,7 @@ const reducer = (state = initialState, action) => {
         return {...x};
       });
       return { ...state, items: newItemsState };
-      
+
     default:
       return state;
   }
