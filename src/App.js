@@ -12,6 +12,7 @@ import DetailsPage from './pages/detailsPage';
 import ReservationPage from './pages/reservation';
 import AddPage from './pages/addPage';
 import DeletePage from './pages/deletePage';
+import Reserve from './pages/reserve';
 /* eslint-disable */
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
               <Route path="/reservation" element={<ReservationPage />} />
               <Route path="/add" element={<AddPage />} />
               <Route path="/delete" element={<DeletePage />} />
+              <Route path="/reserve" element={<Reserve />} />
               </>
         }
         </Routes>
