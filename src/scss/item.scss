@@ -1,13 +1,27 @@
 .image {
 	color: grey;
 	font-weight: 400;
-	border: 1px solid red;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	& > img {
+		//margin-left: 1rem;
+		padding: 1rem;
+		border-radius: 100%;
+		object-fit: cover;
+		background-position: top;
+		background-image: cover;
+	}
 
 	& > .image-title {
 		text-align: center;
 		padding: 1rem;
 		font-weight: 600;
+	}
+
+	& > .description {
+		padding: 1rem;
 	}
 }
