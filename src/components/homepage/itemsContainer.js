@@ -1,8 +1,23 @@
+import Item from '../details/item';
+import '../../scss/items.scss';
+
 function ItemsConainer() {
   return (
-    <div>
-      ItemsConainer
-    </div>
+    <>
+      <div className="items-container">
+        <div className="items-heading">
+          <h1>LATEST DISCOVERIES</h1>
+          <p>Please select a discovery</p>
+        </div>
+        <div className="items">
+          <div className="images">
+            <Item />
+            <Item />
+            <Item />
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
