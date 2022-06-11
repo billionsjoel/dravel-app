@@ -24,6 +24,9 @@ function ReservationPage() {
         <div className="r-cta">
           <select name="" id="">
             <option value="">Kampala</option>
+            <option value="">London</option>
+            <option value="">Russia</option>
+            <option value="">Lusaka</option>
           </select>
           <button type="button">
             <div className="btn">Reserve Now</div>
