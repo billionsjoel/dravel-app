@@ -19,6 +19,7 @@ function ReservationPage() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
             sapiente earum sed delectus, consectetur iure doloribus, unde enim
           </p>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
         </div>
         <div className="r-cta">
           <select name="" id="">
