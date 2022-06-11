@@ -15,6 +15,10 @@ function ReservationPage() {
             dolorem neque explicabo vitae. Minima minus doloremque sunt sit sed!
             Reiciendis, eligendi!
           </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            sapiente earum sed delectus, consectetur iure doloribus, unde enim
+          </p>
         </div>
         <div className="r-cta">
           <select name="" id="">
