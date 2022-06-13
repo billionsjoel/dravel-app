@@ -1,7 +1,18 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import { useState } from 'react';
 import Login from '../components/splash/login';
 
 function Splash() {
+  const [showForm, setShowForm] = useState(false);
+  /* eslint-disable */
+  const handleClick = () => {
+    setShowForm(true);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('hi');
+  };
   return (
     <>
       <div className="cover">
@@ -16,10 +27,19 @@ function Splash() {
         </div>
         <div className="content">
           <div className="heading">Dravel</div>
-          <div className="cta">
+          {!showForm ? <button className="cta" onClick={handleClick}>
             <span className="fa fa-cog p-2" aria-hidden="true" />
             <Login />
-          </div>
+          </button>
+           :
+           <form onSubmit={handleSubmit}>
+             <input />
+             <button className="cta" type="submit" onClick={handleClick}>
+               <span className="fa fa-cog p-2" aria-hidden="true" />
+               <Login />
+             </button>
+           </form>
+         }
         </div>
         <div className="footer fixed-bottom mb-4">&copy; Copyright Dravel 2022</div>
       </div>
