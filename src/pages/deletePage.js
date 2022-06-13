@@ -25,7 +25,7 @@ function deletePage() {
                 <td>Mark</td>
                 <td>Otto</td>
                 <td>
-                  <span className="btn btn-danger">
+                  <span className="btn btn-danger btn-sm">
                     Delete
                     <i className="fa fa-trash ms-1" aria-hidden="true" />
                   </span>
@@ -36,7 +36,7 @@ function deletePage() {
                 <td>Jacob</td>
                 <td>Thornton</td>
                 <td>
-                  <span className="btn btn-danger">
+                  <span className="btn btn-danger btn-sm">
                     Delete
                     <i className="fa fa-trash ms-1" aria-hidden="true" />
                   </span>
@@ -47,7 +47,7 @@ function deletePage() {
                 <td>Larry</td>
                 <td>the Bird</td>
                 <td>
-                  <span className="btn btn-danger">
+                  <span className="btn btn-danger btn-sm">
                     Delete
                     <i className="fa fa-trash ms-1" aria-hidden="true" />
                   </span>
