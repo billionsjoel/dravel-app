@@ -1,4 +1,6 @@
-const LoginUSER = 'Login_USER';
+const LOGINUSER = 'LOGIN_USER';
+const ADDITEM = 'ADD_ITEM';
+
 const initialState = {
   user: '',
   items: [{
@@ -13,14 +15,22 @@ const initialState = {
 };
 
 export const loginUser = (payload) => ({
-  type: LoginUSER,
+  type: LOGINUSER,
+  payload,
+});
+
+export const addItem = (payload) => ({
+  type: ADDITEM,
   payload,
 });
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case LoginUSER:
+    case LOGINUSER:
       return { ...state, user: action.payload };
+
+    case ADDITEM:
+      return { ...state, items: [...state.items, action.payload] };
 
     default:
       return state;
