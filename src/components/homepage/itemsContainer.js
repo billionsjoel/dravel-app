@@ -17,7 +17,7 @@ function ItemsConainer() {
             {
             /* eslint-disable */
               items.map((item,index) => (
-                <Link key={index} to="/details">
+                <Link key={index} to="/details" state={{ item }}>
                   <Item item={item}/>
                 </Link>
               ))
