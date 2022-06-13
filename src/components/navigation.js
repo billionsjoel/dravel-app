@@ -8,6 +8,8 @@ function Navigation() {
         <li>Destinations</li>
         <li>Trips</li>
         <li>Reserve</li>
+        <li>Delete</li>
+        <li>Add Trip</li>
       </ul>
       <div className="socials fixed-bottom">
         <ul>
