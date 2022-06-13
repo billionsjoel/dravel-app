@@ -25,7 +25,10 @@ function deletePage() {
                 <td>Mark</td>
                 <td>Otto</td>
                 <td>
-                  <span className="btn btn-danger btn-sm">
+                  <span
+                    className="btn btn-danger btn-sm"
+                    data-testid="app-title"
+                  >
                     Delete
                     <i className="fa fa-trash ms-1" aria-hidden="true" />
                   </span>
