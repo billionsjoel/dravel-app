@@ -7,8 +7,8 @@ function Navigation() {
       <div className="logo">Dravel</div>
       <ul className="menu">
         <li>
-          <Link to="/reservation">
-            Destinations
+          <Link to="/myreservation">
+            reservation
           </Link>
         </li>
         <li>
