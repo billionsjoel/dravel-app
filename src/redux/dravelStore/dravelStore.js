@@ -15,7 +15,7 @@ const initialState = {
     des: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto voluptatum veritatis accusamus! Beatae eum, quam sit reiciendis, quos voluptates fugiat voluptas totam eos quibusdam aspernatur minima, quisquam saepe eius inventore!',
   }],
   reservations: [{
-    user: 'saloma',
+    user: '',
     itemName: 'item 1',
     date: '2020-20-13',
     city: 'alger',
