@@ -4,8 +4,10 @@ import App from '../App';
 
 afterEach(cleanup);
 
-it('should take a snapshot', () => {
-  const { asFragment } = render(<App />);
+describe('It should test UI DOM components', () => {
+  it('should take a snapshot', () => {
+    const { asFragment } = render(<App />);
 
-  expect(asFragment(<App />)).toMatchSnapshot();
+    expect(asFragment(<App />)).toMatchSnapshot();
+  });
 });
