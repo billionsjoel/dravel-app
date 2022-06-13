@@ -1,17 +1,22 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+import { useDispatch } from 'react-redux';
 import Login from '../components/splash/login';
+import { loginUser } from '../redux/dravelStore/dravelStore';
 
 function Splash() {
-  const [showForm, setShowForm] = useState(false);
   /* eslint-disable */
+  const userName = useRef();
+  const [showForm, setShowForm] = useState(false);
+  const dispatch = useDispatch();
   const handleClick = () => {
-    setShowForm(true);
+    setShowForm(true)
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('hi');
+    dispatch(loginUser(userName.current.value));
+    userName.current.value =''
   };
   return (
     <>
@@ -33,7 +38,7 @@ function Splash() {
           </button>
            :
            <form onSubmit={handleSubmit}>
-             <input />
+             <input type="text" ref={userName} />
              <button className="cta" type="submit" onClick={handleClick}>
                <span className="fa fa-cog p-2" aria-hidden="true" />
                <Login />
