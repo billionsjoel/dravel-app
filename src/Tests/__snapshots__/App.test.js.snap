@@ -19,7 +19,9 @@ exports[`It should test UI DOM components should take a snapshot 1`] = `
           >
              
           </span>
-          <span>
+          <span
+            data-testid="app-title"
+          >
             Dravel
           </span>
         </div>

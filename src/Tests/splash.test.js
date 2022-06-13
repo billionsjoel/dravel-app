@@ -1,21 +1,10 @@
 import React from 'react';
-import { Router } from 'react-router-dom';
-import { render } from '@testing-library/react';
-import { createMemoryHistory } from 'history';
+import { render, within, screen } from '@testing-library/react';
+import '@testing-library/jest-dom';
 import Splash from '../pages/splash';
 
-const renderWithRouter = (component) => {
-  const history = createMemoryHistory();
-  return {
-    ...render(<Router history={history}>{component}</Router>),
-  };
-};
-
-it('should render the home page', () => {
-  const { container, getByTestId } = renderWithRouter(<Splash />);
-  const navbar = getByTestId('navbar');
-  const link = getByTestId('home-link');
-
-  expect(container.innerHTML).toMatch('Home page');
-  expect(navbar).toContainElement(link);
+it('should render the title on the splash page', () => {
+  render(<Splash />);
+  const { getByText } = within(screen.getByTestId('app-title'));
+  expect(getByText('Dravel')).toBeInTheDocument();
 });
