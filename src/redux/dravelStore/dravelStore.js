@@ -13,6 +13,11 @@ const initialState = {
     img: 'https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2432&q=80',
     des: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto voluptatum veritatis accusamus! Beatae eum, quam sit reiciendis, quos voluptates fugiat voluptas totam eos quibusdam aspernatur minima, quisquam saepe eius inventore!',
   }],
+  reservation: [{
+    itemName: 'item 1',
+    date: '2020-20-13',
+    city: 'alger',
+  }],
 };
 
 export const loginUser = (payload) => ({
