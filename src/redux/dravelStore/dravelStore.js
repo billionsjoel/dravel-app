@@ -1,5 +1,6 @@
 const LOGINUSER = 'LOGIN_USER';
 const ADDITEM = 'ADD_ITEM';
+const DELETEITEM = 'DELETE_ITEM';
 
 const initialState = {
   user: '',
@@ -24,13 +25,28 @@ export const addItem = (payload) => ({
   payload,
 });
 
+export const deleteItem = (payload) => ({
+  type: DELETEITEM,
+  payload,
+});
+
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case LOGINUSER:
       return { ...state, user: action.payload };
 
     case ADDITEM:
-      return { ...state, items: [...state.items, action.payload] };
+      return { ...state, items: [...state.items, { name: action.payload }] };
+
+    case DELETEITEM:
+      /* eslint-disable */
+      const newItemsState = state.items.map((x) => {
+        if (x.name === action.payload) {
+          return {...x,deleted: true};
+        }
+        return {...x};
+      });
+      return { ...state, items: newItemsState };
 
     default:
       return state;
