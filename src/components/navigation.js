@@ -6,21 +6,31 @@ function Navigation() {
     <div className="menu-container">
       <div className="logo">Dravel</div>
       <ul className="menu">
-        <Link to="/reservation">
-          Destinations
-        </Link>
-        <Link to="/*">
-          Trips
-        </Link>
-        <Link to="/*">
-          Reserve
-        </Link>
-        <Link to="/delete">
-          Delete
-        </Link>
-        <Link to="/*">
-          Add Trip
-        </Link>
+        <li>
+          <Link to="/reservation">
+            Destinations
+          </Link>
+        </li>
+        <li>
+          <Link to="/*">
+            Trips
+          </Link>
+        </li>
+        <li>
+          <Link to="/*">
+            Reserve
+          </Link>
+        </li>
+        <li>
+          <Link to="/delete">
+            Delete
+          </Link>
+        </li>
+        <li>
+          <Link to="/*">
+            Add Trip
+          </Link>
+        </li>
       </ul>
       <div className="socials fixed-bottom">
         <ul>
