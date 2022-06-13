@@ -5,7 +5,7 @@ function ReservationPage() {
     <>
       <div className="r-container">
         <div className="r-title">
-          <h3>RESERVE A DRAVEL</h3>
+          <h3 data-testid="app-title">RESERVE A DRAVEL</h3>
         </div>
         <hr />
         <div className="r-description">
