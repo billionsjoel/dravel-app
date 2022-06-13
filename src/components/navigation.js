@@ -12,12 +12,7 @@ function Navigation() {
           </Link>
         </li>
         <li>
-          <Link to="/*">
-            Trips
-          </Link>
-        </li>
-        <li>
-          <Link to="/*">
+          <Link to="/reservation">
             Reserve
           </Link>
         </li>
