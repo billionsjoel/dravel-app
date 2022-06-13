@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import Item from '../details/item';
 import '../../scss/items.scss';
@@ -16,7 +17,9 @@ function ItemsConainer() {
             {
             /* eslint-disable */
               items.map((item,index) => (
-                <Item item={item}/>
+                <Link key={index} to="/details">
+                  <Item item={item}/>
+                </Link>
               ))
             }
           </div>
