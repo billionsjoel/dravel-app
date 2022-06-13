@@ -12,7 +12,7 @@ import ReservationPage from '../pages/reservation';
 
 afterEach(cleanup);
 
-describe('It should test UI DOM components', () => {
+describe('It should test if titles render on each page', () => {
   it('should take a snapshot', () => {
     const { asFragment } = render(<App />);
     expect(asFragment(<App />)).toMatchSnapshot();
