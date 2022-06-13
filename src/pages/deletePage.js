@@ -1,4 +1,5 @@
 import Navigation from '../components/navigation';
+import '../../src/scss/delete.scss';
 
 function deletePage() {
   return (
