@@ -5,26 +5,37 @@ import {
   BrowserRouter,
   Navigate,
 } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import Splash from './pages/splash';
 import HomePage from './pages/homePage';
 import DetailsPage from './pages/detailsPage';
 import DeletePage from './pages/deletePage';
 import ReservationPage from './pages/reservation';
+/* eslint-disable */
 
 function App() {
+  const isUser = useSelector((state) => state.dravelReducer.user);
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Splash />} />
           <Route
             path="*"
             element={<Navigate to="/" />}
           />
-          <Route path="/home" element={<HomePage />} />
-          <Route path="/details" element={<DetailsPage />} />
-          <Route path="/reservation" element={<ReservationPage />} />
-          <Route path="/delete" element={<DeletePage />} />
+          {
+            !isUser.length > 0 ?
+
+            <Route path="/" element={<Splash />} />
+
+              :
+              <>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/details" element={<DetailsPage />} />
+              <Route path="/reservation" element={<ReservationPage />} />
+              <Route path="/delete" element={<DeletePage />} />
+              </>
+        }
         </Routes>
       </BrowserRouter>
     </div>
