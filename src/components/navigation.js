@@ -26,11 +26,6 @@ function Navigation() {
             Delete Trip
           </Link>
         </li>
-        <li>
-          <Link to="/*">
-            hi
-          </Link>
-        </li>
       </ul>
       <div className="socials fixed-bottom">
         <ul>
