@@ -1,8 +1,8 @@
 .delete-container {
-	display: flex;
+  display: flex;
 
-	& > .delete-content {
-		flex-grow: 1;
+  & > .delete-content {
+    flex-grow: 1;
     padding: 2rem;
-	}
+  }
 }
