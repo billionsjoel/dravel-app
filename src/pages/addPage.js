@@ -1,9 +1,9 @@
 function AddPage() {
-    return (
-        <div>
-
-        </div>
-    )
+  return (
+    <div>
+      add page
+    </div>
+  );
 }
 
 export default AddPage;

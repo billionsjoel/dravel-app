@@ -22,13 +22,18 @@ function Navigation() {
           </Link>
         </li>
         <li>
+          <Link to="/add">
+            Add Trip
+          </Link>
+        </li>
+        <li>
           <Link to="/delete">
-            Delete
+            Delete Trip
           </Link>
         </li>
         <li>
           <Link to="/*">
-            Add Trip
+            hi
           </Link>
         </li>
       </ul>
