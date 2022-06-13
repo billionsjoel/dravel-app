@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should take a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div
+      class="cover"
+    >
+      <div
+        class="nav"
+      >
+        <div
+          class="logo"
+        >
+          <span
+            class="fa fa-bars"
+          >
+             
+          </span>
+          <span>
+            Dravel
+          </span>
+        </div>
+        <div
+          class="search"
+        >
+          <i
+            aria-hidden="true"
+            class="fa fa-search"
+          />
+        </div>
+      </div>
+      <div
+        class="content"
+      >
+        <div
+          class="heading"
+        >
+          Dravel
+        </div>
+        <div
+          class="cta"
+        >
+          <span
+            aria-hidden="true"
+            class="fa fa-cog p-2"
+          />
+          <div>
+            login
+          </div>
+        </div>
+      </div>
+      <div
+        class="footer fixed-bottom mb-4"
+      >
+        © Copyright Dravel 2022
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
