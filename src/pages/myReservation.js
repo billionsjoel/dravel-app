@@ -3,7 +3,6 @@ import Navigation from '../components/navigation';
 
 function MyReservation() {
   const reservations = useSelector((state) => state.dravelReducer.reservations);
-  console.log(reservations);
   return (
     <>
       <div className="delete-container">
