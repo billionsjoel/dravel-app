@@ -34,7 +34,7 @@ function deletePage() {
 									<tr key={index}>
 										<th scope="row">1</th>
 										<td>{item.name}</td>
-										<td>{item.des}</td>
+										<td className='w-75'>{item.des}</td>
 										<td>later</td>
 										<td>
 												<button
@@ -42,7 +42,7 @@ function deletePage() {
 													onClick={handleDelete}
 													value={item.name}
 												>
-													delete
+													Delete
 													<i className="fa fa-trash ms-1" aria-hidden="true" />
 												</button>
 										</td>
