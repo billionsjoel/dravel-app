@@ -26,6 +26,11 @@ function Navigation() {
             Delete Trip
           </Link>
         </li>
+        <li>
+          <Link to="/logout" className="btn btn-warning text-white">
+            Logout
+          </Link>
+        </li>
       </ul>
       <div className="socials fixed-bottom">
         <ul>
