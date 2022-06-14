@@ -1,0 +1,7 @@
+.add-item-container {
+	display: flex;
+
+	& > .add-item-form {
+		flex-grow: 1;
+	}
+}
