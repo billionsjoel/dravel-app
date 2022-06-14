@@ -42,7 +42,7 @@ const Reserve = () => {
                 ))
               }
               </select>
-              <button className="cta btn btn-primary btn-block" type="submit">
+              <button className="cta btn btn-primary btn-block w-100" type="submit">
                 <span className="fa fa-cog p-2" aria-hidden="true" />
                 Add item
               </button>
