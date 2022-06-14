@@ -1,15 +1,31 @@
 import '../scss/nav.scss';
+import { Link } from 'react-router-dom';
 
 function Navigation() {
   return (
     <div className="menu-container">
       <div className="logo">Dravel</div>
       <ul className="menu">
-        <li>Destinations</li>
-        <li>Trips</li>
-        <li>Reserve</li>
-        <li>Delete</li>
-        <li>Add Trip</li>
+        <li>
+          <Link to="/myreservation">
+            reservation
+          </Link>
+        </li>
+        <li>
+          <Link to="/reservation">
+            Reserve
+          </Link>
+        </li>
+        <li>
+          <Link to="/add">
+            Add Trip
+          </Link>
+        </li>
+        <li>
+          <Link to="/delete">
+            Delete Trip
+          </Link>
+        </li>
       </ul>
       <div className="socials fixed-bottom">
         <ul>
