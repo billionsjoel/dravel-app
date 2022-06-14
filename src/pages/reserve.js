@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addreservation } from '../redux/dravelStore/dravelStore';
 import Navigation from '../components/navigation';
+import '../scss/reserve.scss';
 
 const Reserve = () => {
   const user = useSelector((state) => state.dravelReducer.user);
@@ -24,16 +25,16 @@ const Reserve = () => {
   };
   return (
     <>
-      <div className="delete-container">
+      <div className="reserve-container">
         <div className="nav">
           <Navigation />
         </div>
-        <div className="delete-content">
+        <div className="reserve-content">
           <h1 className="p-4 text-center">Reserve now</h1>
-          <form onSubmit={handleAdd}>
-            <input type="text" ref={city} />
-            <input type="date" ref={date} />
-            <select value={item} onChange={(e) => setItem(e.target.value)}>
+          <form onSubmit={handleAdd} className="form">
+            <input type="text" ref={city} className="form-control" />
+            <input type="date" ref={date} className="form-control" />
+            <select value={item} onChange={(e) => setItem(e.target.value)} className="form-control">
               {
                 /* eslint-disable */
                 items.map((item,index) => (
@@ -41,7 +42,7 @@ const Reserve = () => {
                 ))
               }
               </select>
-              <button className="cta" type="submit">
+              <button className="cta btn btn-primary btn-block" type="submit">
                 <span className="fa fa-cog p-2" aria-hidden="true" />
                 Add item
               </button>

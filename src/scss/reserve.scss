@@ -1,0 +1,15 @@
+.reserve-container {
+	display: flex;
+
+	.reserve-content {
+		flex-grow: 1;
+
+		& > .form {
+			display: flex;
+			flex-direction: column;
+      width: 500px;
+      gap: 1rem;
+      align-items: center;
+		}
+	}
+}
