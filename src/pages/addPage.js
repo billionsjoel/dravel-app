@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import { useDispatch } from 'react-redux';
 import { addItem } from '../redux/dravelStore/dravelStore';
 import Navigation from '../components/navigation';
+import '../scss/addPage.scss';
 
 function AddPage() {
   const item = useRef();
