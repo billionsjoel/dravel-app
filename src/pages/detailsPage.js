@@ -1,7 +1,10 @@
+import { useLocation } from 'react-router-dom';
 import Navigation from '../components/navigation';
 import '../scss/details.scss';
 
 function DetailsPage() {
+  const location = useLocation();
+  const item = location.state;
   return (
     <>
       <div className="details">
@@ -11,7 +14,7 @@ function DetailsPage() {
         <div className="image">
           <img
             className="details-img"
-            src="https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80"
+            src={item.item.img}
             alt=""
             height={500}
             width={500}

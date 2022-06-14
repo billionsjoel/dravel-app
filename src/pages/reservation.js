@@ -1,4 +1,5 @@
 import '../scss/reservation.scss';
+import { Link } from 'react-router-dom';
 
 function ReservationPage() {
   return (
@@ -28,9 +29,11 @@ function ReservationPage() {
             <option value="">Russia</option>
             <option value="">Lusaka</option>
           </select>
-          <button type="button">
-            <div className="btn">Reserve Now</div>
-          </button>
+          <Link to="/reserve">
+            <button type="button">
+              <div className="btn">Reserve Now</div>
+            </button>
+          </Link>
         </div>
       </div>
     </>
