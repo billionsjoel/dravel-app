@@ -6,3 +6,15 @@
     padding: 2rem;
   }
 }
+
+@media (max-width: 480px){
+.delete-container {
+  display: flex;
+  flex-direction: column;
+
+  & > .delete-content {
+    flex-grow: 1;
+    padding: 2rem;
+  }
+}
+}
