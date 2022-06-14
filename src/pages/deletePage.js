@@ -1,3 +1,4 @@
+/* eslint-disable no-tabs */
 import { useSelector, useDispatch } from 'react-redux';
 import { deleteItem } from '../redux/dravelStore/dravelStore';
 import Navigation from '../components/navigation';
@@ -28,27 +29,31 @@ function deletePage() {
             </thead>
             <tbody>
               {
-                /* eslint-disable */
-                items.map((item,index) => (
-                  <tr key={index}>
-                    <th scope="row">1</th>
-                    <td>{item.name}</td>
-                    <td>{item.des}</td>
-                    <td>later</td>
-                    <td>
-                      <span className="btn btn-danger btn-sm">
-                        <button onClick={handleDelete} value={item.name}>delete</button>
-                        <i className="fa fa-trash ms-1" aria-hidden="true" />
-                      </span>
-                    </td>
-                  </tr>
-                ))
-              }
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </>
+								/* eslint-disable */
+								items.map((item, index) => (
+									<tr key={index}>
+										<th scope="row">1</th>
+										<td>{item.name}</td>
+										<td>{item.des}</td>
+										<td>later</td>
+										<td>
+												<button
+													className="btn btn-danger btn-sm w-100 d-flex justify-content-center align-items-center"
+													onClick={handleDelete}
+													value={item.name}
+												>
+													delete
+													<i className="fa fa-trash ms-1" aria-hidden="true" />
+												</button>
+										</td>
+									</tr>
+								))
+							}
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</>
   );
 }
 
