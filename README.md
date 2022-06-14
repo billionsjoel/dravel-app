@@ -6,7 +6,7 @@ The project you are going to build for the Final Capstone Project is based on an
 
 > | -   | Home Page                        | -   | Dashboard                          | -   | Reservation                           | -   |
 > | --- | ---------------------------------- | --- | ----------------------------------- | --- | ----------------------------------- | --- |
-> | -   | ![screenshot](app-screenshot1.png) | -   | ![screenshot](app-screenshot2.png) | -   | ![screenshot](app-screenshot3.png) | -   |
+> | -   | ![screenshot](app-screenshot.png) | -   | ![screenshot](app-screenshot2.png) | -   | ![screenshot](app-screenshot3.png) | -   |
 
 ## Live App link
 - Here is the [link](https://microverse.org) to the live app `https://dravel-app.herokuapp.com/`
