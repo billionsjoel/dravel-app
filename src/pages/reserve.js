@@ -31,7 +31,7 @@ const Reserve = () => {
         </div>
         <div className="reserve-content">
           <h1 className="p-4 text-center">Reserve now</h1>
-          <form onSubmit={handleAdd} className="form">
+          <form onSubmit={handleAdd} className="form form-control">
             <input type="text" ref={city} className="form-control" />
             <input type="date" ref={date} className="form-control" />
             <select value={item} onChange={(e) => setItem(e.target.value)} className="form-control">
