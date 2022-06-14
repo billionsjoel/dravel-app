@@ -1,67 +1,71 @@
 .r-container {
-  height: 100vh;
-  background-color: #75b251;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+	height: 100vh;
+	background-color: #75b251;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 
-  & > hr {
-    color: aliceblue;
-    width: 60%;
-    height: 2px;
-    margin-bottom: 2rem;
-  }
+	& > hr {
+		color: aliceblue;
+		width: 60%;
+		height: 2px;
+		margin-bottom: 2rem;
+	}
 
-  & > .r-title {
-    & > h3 {
-      font-weight: 600;
-      letter-spacing: 0.6rem;
-      font-size: 4rem;
-      color: aliceblue;
-    }
-  }
+	& > .r-title {
+		& > h3 {
+			font-weight: 600;
+			letter-spacing: 0.6rem;
+			font-size: 4rem;
+			color: aliceblue;
+		}
+	}
 
-  & > .r-description {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    line-height: -4rem !important;
+	& > .r-description {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		line-height: -4rem !important;
 
-    & > p {
-      color: aliceblue;
-      line-height: 1px;
-    }
-  }
+		& > p {
+			color: aliceblue;
+			line-height: 1px;
+		}
+	}
 
-  & > .r-cta {
-    display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
+	& > .r-cta {
+		display: flex;
+		gap: 1rem;
+		margin-top: 2rem;
 
-    & > select {
-      border: 1px solid aliceblue;
-      padding: 1rem;
-      border-radius: 2rem;
-      width: 10rem;
-      text-align: center;
-      color: #75b251;
-    }
+		& > select {
+			border: 1px solid aliceblue;
+			padding: 1rem;
+			border-radius: 2rem;
+			width: 10rem;
+			text-align: center;
+			color: #75b251;
+		}
 
-    & > button {
-      background-color: aliceblue;
-      border-radius: 2rem;
-      border: none;
-      padding: 0.5rem;
-      width: 10rem;
+		& > button {
+			background-color: aliceblue;
+			border-radius: 2rem;
+			border: none;
+			padding: 0.5rem;
+			width: 10rem;
 
-      & > .btn {
-        color: #75b251;
-      }
+			& > .btn {
+				color: #75b251;
 
-      &:hover {
-        background-color: darken($color: aliceblue, $amount: 10);
-      }
-    }
-  }
+				&:hover {
+					color: #ffffff;
+				}
+			}
+
+			&:hover {
+				background-color: darken($color: aliceblue, $amount: 10);
+			}
+		}
+	}
 }
