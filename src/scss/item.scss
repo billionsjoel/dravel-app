@@ -24,3 +24,35 @@
     padding: 1rem;
   }
 }
+
+@media (max-width: 480px) {
+  .image {
+    color: grey;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+
+    & > img {
+      padding: 1rem;
+      border-radius: 100%;
+      object-fit: cover;
+      background-position: top;
+      height: 200px;
+      width: 200px;
+    }
+
+    & > .image-title {
+      text-align: center;
+      padding: 1rem;
+      font-weight: 600;
+    }
+
+    & > .description {
+      padding: 2rem;
+      text-align: justify;
+    }
+  }
+}

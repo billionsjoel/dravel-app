@@ -100,3 +100,61 @@
     color: #fff;
   }
 }
+
+@media (max-width: 480px) {
+  .cover {
+    & > .content {
+      text-align: center;
+      margin-top: 8rem;
+
+      & > .heading {
+        line-height: 1rem;
+        font-size: 4rem;
+        letter-spacing: 1rem;
+        padding: 1rem;
+        color: #fff;
+        font-weight: 100;
+      }
+
+      & > .form {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        justify-content: center;
+        margin: 4rem auto;
+        gap: 1rem;
+
+        & > input {
+          border-radius: 10px;
+        }
+
+        & > button {
+          color: #fff;
+          border: none;
+          border-radius: 2rem;
+          background-color: #75b251;
+          width: 10rem;
+          height: 2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+          transform: scale(1);
+          transition: all 1s ease-in-out;
+
+          &:hover {
+            background-color: darken($color: #75b251, $amount: 10);
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: all 1s ease-in-out;
+          }
+        }
+      }
+    }
+
+    & > .footer {
+      text-align: center;
+      color: #fff;
+    }
+  }
+}
