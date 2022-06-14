@@ -24,7 +24,7 @@ function Splash() {
       <div className="cover">
         <div className="nav">
           <div className="logo">
-            <span className="fa fa-bars"> </span>
+            {/*<span className="fa fa-bars"> </span>*/}
             <span>Dravel</span>
           </div>
           <div className="search">
