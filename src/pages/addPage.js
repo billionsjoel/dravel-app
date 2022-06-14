@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import { useDispatch } from 'react-redux';
 import { addItem } from '../redux/dravelStore/dravelStore';
 import Navigation from '../components/navigation';
+import '../scss/addPage.scss';
 
 function AddPage() {
   const item = useRef();
@@ -27,11 +28,39 @@ function AddPage() {
         <Navigation />
       </div>
       <div className="add-item-form">
-        <form onSubmit={handleAdd}>
-          <input type="text" ref={item} placeholder="item name" />
-          <input type="text" ref={des} placeholder="des" />
-          <input type="text" ref={image} placeholder="img_url" />
-          <button className="cta" type="submit">
+        <h1 className="text-center p-4">Add dravel item</h1>
+        <form onSubmit={handleAdd} className="add-form form form-control">
+          <label htmlFor="itemName">
+            Item Name
+            <input
+              type="text"
+              ref={item}
+              placeholder="item name"
+              className="form-control"
+              id="itemName"
+            />
+          </label>
+          <label htmlFor="description">
+            Description
+            <input
+              type="text"
+              ref={des}
+              placeholder="des"
+              className="form-control"
+              id="description"
+            />
+          </label>
+          <label htmlFor="url">
+            Image Url
+            <input
+              type="text"
+              ref={image}
+              placeholder="img_url"
+              className="form-control"
+              id="url"
+            />
+          </label>
+          <button className="btn btn-primary btn-block" type="submit">
             <span className="fa fa-cog p-2" aria-hidden="true" />
             Add item
           </button>

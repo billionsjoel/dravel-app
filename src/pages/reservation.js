@@ -29,11 +29,9 @@ function ReservationPage() {
             <option value="">Russia</option>
             <option value="">Lusaka</option>
           </select>
-          <Link to="/reserve">
-            <button type="button">
-              <div className="btn">Reserve Now</div>
-            </button>
-          </Link>
+          <button type="button">
+            <Link to="/reserve" className="btn">Reserve Now </Link>
+          </button>
         </div>
       </div>
     </>

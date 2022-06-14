@@ -57,6 +57,10 @@
 
       & > .btn {
         color: #75b251;
+
+        &:hover {
+          color: #fff;
+        }
       }
 
       &:hover {
