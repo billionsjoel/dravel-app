@@ -21,7 +21,7 @@ function DetailsPage() {
           />
         </div>
         <div className="booking-section">
-          <div className="title">
+          <div className="title" data-testid="app-title">
             Product heading
             <span className="sub-title">Product details</span>
           </div>

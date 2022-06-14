@@ -25,7 +25,7 @@ function Splash() {
         <div className="nav">
           <div className="logo">
             <span className="fa fa-bars"> </span>
-            <span>Dravel</span>
+            <span data-testid="app-title">Dravel</span>
           </div>
           <div className="search">
             <i className="fa fa-search" aria-hidden="true" />
@@ -47,7 +47,9 @@ function Splash() {
            </form>
          }
         </div>
-        <div className="footer fixed-bottom mb-4">&copy; Copyright Dravel 2022</div>
+        <div className="footer fixed-bottom mb-4">
+          &copy; Copyright Dravel 2022
+        </div>
       </div>
     </>
   );

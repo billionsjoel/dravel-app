@@ -16,7 +16,7 @@ function deletePage() {
           <Navigation />
         </div>
         <div className="delete-content">
-          <h1 className="p-4 text-center">Delete Dravel Trips</h1>
+          <h1 className="p-4 text-center" data-testid="app-title">Delete Dravel Trips</h1>
           <table className="table table-striped">
             <thead>
               <tr>
