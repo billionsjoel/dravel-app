@@ -10,27 +10,33 @@ function AddPage() {
   const dispatch = useDispatch();
   const handleAdd = (e) => {
     e.preventDefault();
-    dispatch(addItem({
-      name: item.current.value,
-      img: image.current.value,
-      des: des.current.value,
-    }));
+    dispatch(
+      addItem({
+        name: item.current.value,
+        img: image.current.value,
+        des: des.current.value,
+      }),
+    );
     item.current.value = '';
     image.current.value = '';
     des.current.value = '';
   };
   return (
-    <div>
-      <Navigation />
-      <form onSubmit={handleAdd}>
-        <input type="text" ref={item} placeholder="item name" />
-        <input type="text" ref={des} placeholder="des" />
-        <input type="text" ref={image} placeholder="img_url" />
-        <button className="cta" type="submit">
-          <span className="fa fa-cog p-2" aria-hidden="true" />
-          Add item
-        </button>
-      </form>
+    <div className="add-item-container">
+      <div className="add-item-nav">
+        <Navigation />
+      </div>
+      <div className="add-item-form">
+        <form onSubmit={handleAdd}>
+          <input type="text" ref={item} placeholder="item name" />
+          <input type="text" ref={des} placeholder="des" />
+          <input type="text" ref={image} placeholder="img_url" />
+          <button className="cta" type="submit">
+            <span className="fa fa-cog p-2" aria-hidden="true" />
+            Add item
+          </button>
+        </form>
+      </div>
     </div>
   );
 }
