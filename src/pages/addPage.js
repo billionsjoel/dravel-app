@@ -28,11 +28,11 @@ function AddPage() {
         <Navigation />
       </div>
       <div className="add-item-form">
-        <form onSubmit={handleAdd}>
-          <input type="text" ref={item} placeholder="item name" />
-          <input type="text" ref={des} placeholder="des" />
-          <input type="text" ref={image} placeholder="img_url" />
-          <button className="cta" type="submit">
+        <form onSubmit={handleAdd} className="add-form form form-control">
+          <input type="text" ref={item} placeholder="item name" className="form-control" />
+          <input type="text" ref={des} placeholder="des" className="form-control" />
+          <input type="text" ref={image} placeholder="img_url" className="form-control" />
+          <button className="btn btn-primary btn-block" type="submit">
             <span className="fa fa-cog p-2" aria-hidden="true" />
             Add item
           </button>

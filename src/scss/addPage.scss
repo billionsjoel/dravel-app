@@ -1,7 +1,18 @@
 .add-item-container {
 	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	& > .add-item-form {
 		flex-grow: 1;
+
+		& > .add-form {
+			display: flex;
+			flex-direction: column;
+      padding: 1rem;
+			margin: auto;
+      width: 500px;
+      gap: 1rem;
+		}
 	}
 }
