@@ -3,6 +3,7 @@ import { useState, useRef } from 'react';
 import { useDispatch } from 'react-redux';
 import Login from '../components/splash/login';
 import { loginUser } from '../redux/dravelStore/dravelStore';
+import '../scss/splash.scss';
 
 function Splash() {
   /* eslint-disable */
@@ -37,7 +38,7 @@ function Splash() {
             <Login />
           </button>
            :
-           <form onSubmit={handleSubmit}>
+           <form onSubmit={handleSubmit} className="form">
              <input type="text" ref={userName} />
              <button className="cta" type="submit">
                <span className="fa fa-cog p-2" aria-hidden="true" />
