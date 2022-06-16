@@ -1,4 +1,5 @@
 const LOGINUSER = 'LOGIN_USER';
+const FETCHITEMS = 'FETCH_ITEMS';
 const ADDITEM = 'ADD_ITEM';
 const DELETEITEM = 'DELETE_ITEM';
 const ADDRESERVATION = 'ADD_RESERVATION';
@@ -22,6 +23,11 @@ const initialState = {
   }],
 };
 
+export const fetchItems = (payload) => ({
+  type: FETCHITEMS,
+  payload,
+});
+
 export const loginUser = (payload) => ({
   type: LOGINUSER,
   payload,
@@ -44,6 +50,9 @@ export const addreservation = (payload) => ({
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
+    case FETCHITEMS:
+      return { ...state, items: [...action.payload] };
+
     case LOGINUSER:
       return { ...state, user: action.payload };
 
