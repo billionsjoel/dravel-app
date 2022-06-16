@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { useState, useRef } from 'react';
+import axios from 'axios';
 import { useDispatch } from 'react-redux';
 import Login from '../components/splash/login';
 import { loginUser } from '../redux/dravelStore/dravelStore';
@@ -19,6 +20,30 @@ function Splash() {
     dispatch(loginUser(userName.current.value));
     userName.current.value =''
   };
+
+  const handleSubmit2 = (event) => {
+    event.preventDefault();
+    console.log(`${userName.current.value}@admin.com`)
+    axios.post('https://dravel-api.herokuapp.com/users',
+    {
+      "user": {
+          email:`${userName.current.value}@admin.com`,
+          user_name:`${userName.current.value}`,
+          password:`${userName.current.value}1234`
+      }
+    })
+    .then(function (response) {
+      if (response.status === 200) {
+        dispatch(loginUser(response.data.auth_token));
+        userName.current.value=''
+      }
+
+    })
+    .catch(function (error) {
+      console.log(error)
+    });
+  }
+
   return (
     <>
       <div className="cover">
@@ -38,7 +63,7 @@ function Splash() {
             <Login />
           </button>
            :
-           <form onSubmit={handleSubmit} className="form">
+           <form onSubmit={handleSubmit2} className="form">
              <input type="text" ref={userName} />
              <button className="cta" type="submit">
                <span className="fa fa-cog p-2" aria-hidden="true" />
