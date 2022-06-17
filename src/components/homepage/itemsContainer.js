@@ -19,7 +19,9 @@ function ItemsConainer() {
         dispatch(fetchItems(response.data));
       }
 
-    })
+    }).catch(function (error) {
+      console.log(error)
+    });
 
   }, []);
   return (

@@ -1,3 +1,5 @@
+/* eslint-disable */
+import axios from 'axios';
 import { useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addreservation } from '../redux/dravelStore/dravelStore';
@@ -11,17 +13,35 @@ const Reserve = () => {
   const date = useRef();
   const city = useRef();
   const [item, setItem] = useState('');
-
+  const token = useSelector((state) => state.dravelReducer.user);
   const dispatch = useDispatch();
   const handleAdd = (e) => {
     e.preventDefault();
-    dispatch(addreservation({
+    /*dispatch(addreservation({
       user,
       itemName: item,
       date: date.current.value,
       city: city.current.value,
     }));
-    setItem('');
+    setItem('');*/
+    console.log(date)
+    axios.post(`https://dravel-api.herokuapp.com/trips/${item}/reservations`,
+    {
+      date:`${date.current.value}`
+    },
+    { headers: {"Authorization" : token} }
+
+  )
+    .then(function (response) {
+      console.log(response);
+      if (response.status === 200) {
+
+        //dispatch(fetchItems(response.data));
+      }
+
+    }).catch(function (error) {
+      console.log(error)
+    });
   };
   return (
     <>
@@ -38,7 +58,7 @@ const Reserve = () => {
               {
                 /* eslint-disable */
                 items.map((item,index) => (
-                  <option key={index} value={item.name}>{item.name}</option>
+                  <option key={index} value={item.id}>{item.name}</option>
                 ))
               }
               </select>
