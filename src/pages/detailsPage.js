@@ -14,7 +14,7 @@ function DetailsPage() {
         <div className="image">
           <img
             className="details-img"
-            src={item.item.img}
+            src={item.item.image}
             alt=""
             height={500}
             width={500}
@@ -22,12 +22,16 @@ function DetailsPage() {
         </div>
         <div className="booking-section">
           <div className="title">
-            Product heading
-            <span className="sub-title">Product details</span>
+            {item.item.name}
+            <span className="sub-title">{item.item.description}</span>
+            <span className="sub-title">{item.item.destination}</span>
           </div>
           <div className="fee">
             <span>Booking</span>
-            <span>$1000</span>
+            <span>
+              $
+              {item.item.price}
+            </span>
           </div>
           <div className="fee">
             <span>Ticket</span>

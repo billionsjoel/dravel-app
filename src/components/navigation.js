@@ -1,10 +1,17 @@
+/* eslint-disable */
 import '../scss/nav.scss';
+import { useDispatch } from 'react-redux';
+import { logoutUser } from '../redux/dravelStore/dravelStore';
 import { Link } from 'react-router-dom';
 
 function Navigation() {
+  const dispatch = useDispatch();
+  const handleLogout = () => {
+    dispatch(logoutUser('logOUUT'))
+  }
   return (
     <div className="menu-container">
-      <div className="logo">Dravel</div>
+      <Link to="/" className="logo">Dravel</Link>
       <ul className="menu">
         <li>
           <Link to="/myreservation">
@@ -27,9 +34,9 @@ function Navigation() {
           </Link>
         </li>
         <li>
-          <Link to="/logout" className="btn btn-warning text-white">
+          <button  className="btn btn-warning text-white" onClick={handleLogout}>
             Logout
-          </Link>
+          </button>
         </li>
       </ul>
       <div className="socials fixed-bottom">

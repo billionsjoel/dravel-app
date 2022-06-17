@@ -6,14 +6,14 @@ function Item({ item }) {
     <>
       <div className="image">
         <img
-          src={item.img}
+          src={item.image}
           alt=""
           height={500}
           width={500}
         />
         <div className="image-title">{item.name}</div>
         <div className="description">
-          {item.des}
+          {item.description}
         </div>
         <Socials />
       </div>
