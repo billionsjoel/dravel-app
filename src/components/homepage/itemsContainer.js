@@ -11,6 +11,7 @@ function ItemsConainer() {
   const dispatch = useDispatch();
   const items = useSelector((state) => state.dravelReducer.items);
   const token = useSelector((state) => state.dravelReducer.user);
+  const reload = useSelector((state) => state.dravelReducer.user);
   useEffect(() => {
     axios.get('https://dravel-api.herokuapp.com/trips')
     .then(function (response) {

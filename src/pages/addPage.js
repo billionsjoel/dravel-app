@@ -28,9 +28,8 @@ function AddPage() {
 
   )
     .then(function (response) {
-      console.log(response);
-      if (response.status === 200) {
-
+      if (response.status === 201) {
+        dispatch(addItem(response.data))
         price.current.value = '';
         item.current.value = '';
         image.current.value = '';

@@ -2,6 +2,7 @@
 import axios from 'axios';
 import { useSelector, useDispatch } from 'react-redux';
 import { deleteItem } from '../redux/dravelStore/dravelStore';
+import { useNavigate } from "react-router-dom";
 import Navigation from '../components/navigation';
 import '../scss/delete.scss';
 
@@ -19,7 +20,8 @@ function deletePage() {
       console.log(response);
       if (response.status === 200) {
 
-        //dispatch(fetchItems(response.data));
+        dispatch(deleteItem(e.target.value));
+
       }
 
     }).catch(function (error) {

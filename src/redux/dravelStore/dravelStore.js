@@ -9,7 +9,6 @@ const initialState = {
   user: '',
   items: [],
   reservations: [],
-  reload:''
 };
 
 export const fetchItems = (payload) => ({
@@ -54,19 +53,15 @@ const reducer = (state = initialState, action) => {
       return { ...state, user: action.payload };
 
     case ADDITEM:
-      return { ...state, items: [...state.items, { name: action.payload }] };
+      return { ...state, items: [...state.items, action.payload] };
 
     case ADDRESERVATION:
       return { ...state, reservations: [...state.reservations, action.payload] };
 
     case DELETEITEM:
       /* eslint-disable */
-      const newItemsState = state.items.map((x) => {
-        if (x.name === action.payload) {
-          return {...x,deleted: true};
-        }
-        return {...x};
-      });
+      const newItemsState = state.items.filter((x) => x.id !== parseInt(action.payload));
+      console.log(newItemsState)
       return { ...state, items: newItemsState };
 
     default:
