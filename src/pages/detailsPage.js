@@ -1,4 +1,4 @@
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Navigation from '../components/navigation';
 import '../scss/details.scss';
 
@@ -43,7 +43,7 @@ function DetailsPage() {
           </div>
           <div className="btn btn-success mt-4">
             <i className="fa fa-floppy-o" aria-hidden="true" />
-            Reserve
+            <Link to="/reservation" className="text-white">Reserve</Link>
           </div>
         </div>
       </div>
