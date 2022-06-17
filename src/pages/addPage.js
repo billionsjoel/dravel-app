@@ -1,5 +1,7 @@
+/* eslint-disable */
+import axios from 'axios';
 import { useRef } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { addItem } from '../redux/dravelStore/dravelStore';
 import Navigation from '../components/navigation';
 import '../scss/addPage.scss';
@@ -8,19 +10,37 @@ function AddPage() {
   const item = useRef();
   const des = useRef();
   const image = useRef();
+  const price = useRef();
+  const token = useSelector((state) => state.dravelReducer.user);
   const dispatch = useDispatch();
   const handleAdd = (e) => {
     e.preventDefault();
-    dispatch(
-      addItem({
-        name: item.current.value,
-        img: image.current.value,
-        des: des.current.value,
-      }),
-    );
-    item.current.value = '';
-    image.current.value = '';
-    des.current.value = '';
+    axios.post(`https://dravel-api.herokuapp.com/trips`,
+    {
+  		name: item.current.value,
+  	  destination: "Zambia 3",
+  		vip: true,
+  	  price: price.current.value,
+  	  image: image.current.value,
+  	  description: des.current.value
+  },
+    { headers: {"Authorization" : token} }
+
+  )
+    .then(function (response) {
+      console.log(response);
+      if (response.status === 200) {
+
+        price.current.value = '';
+        item.current.value = '';
+        image.current.value = '';
+        des.current.value = '';
+      }
+
+    }).catch(function (error) {
+      console.log(error)
+    });
+
   };
   return (
     <div className="add-item-container">
@@ -56,6 +76,16 @@ function AddPage() {
               type="text"
               ref={image}
               placeholder="img_url"
+              className="form-control"
+              id="url"
+            />
+          </label>
+          <label htmlFor="url">
+            price
+            <input
+              type="number"
+              ref={price}
+              placeholder="price"
               className="form-control"
               id="url"
             />

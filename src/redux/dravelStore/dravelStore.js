@@ -9,6 +9,7 @@ const initialState = {
   user: '',
   items: [],
   reservations: [],
+  reload:''
 };
 
 export const fetchItems = (payload) => ({

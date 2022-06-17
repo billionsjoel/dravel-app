@@ -1,4 +1,5 @@
-/* eslint-disable no-tabs */
+/* eslint-disable */
+import axios from 'axios';
 import { useSelector, useDispatch } from 'react-redux';
 import { deleteItem } from '../redux/dravelStore/dravelStore';
 import Navigation from '../components/navigation';
@@ -7,8 +8,23 @@ import '../scss/delete.scss';
 function deletePage() {
   const items = useSelector((state) => state.dravelReducer.items);
   const dispatch = useDispatch();
+  const token = useSelector((state) => state.dravelReducer.user);
+
   const handleDelete = (e) => {
-    dispatch(deleteItem(e.target.value));
+    axios.delete(`https://dravel-api.herokuapp.com/trips/${e.target.value}`,
+    { headers: {"Authorization" : token} }
+
+  )
+    .then(function (response) {
+      console.log(response);
+      if (response.status === 200) {
+
+        //dispatch(fetchItems(response.data));
+      }
+
+    }).catch(function (error) {
+      console.log(error)
+    });
   };
   return (
     <>
@@ -23,8 +39,6 @@ function deletePage() {
               <tr>
                 <th scope="col">#</th>
                 <th scope="col">Name</th>
-                <th scope="col">des</th>
-                <th scope="col">img url</th>
               </tr>
             </thead>
             <tbody>
@@ -32,15 +46,13 @@ function deletePage() {
 								/* eslint-disable */
 								items.map((item, index) => (
 									<tr key={index}>
-										<th scope="row">1</th>
+										<th scope="row">{index+1}</th>
 										<td>{item.name}</td>
-										<td className='w-75'>{item.des}</td>
-										<td>later</td>
 										<td>
 												<button
 													className="btn btn-danger btn-sm w-100 d-flex justify-content-center align-items-center"
-													onClick={handleDelete}
-													value={item.name}
+													onClick={(e)=> {handleDelete(e)}}
+													value={item.id}
 												>
 													Delete
 													<i className="fa fa-trash ms-1" aria-hidden="true" />

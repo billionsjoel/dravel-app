@@ -47,7 +47,7 @@ function MyReservation() {
                 /* eslint-disable */
                 reservations.map((reservation,index) => (
                   <tr key={index}>
-                    <th scope="row">1</th>
+                    <th scope="row">{index+1}</th>
                     <td>
                       {items.find(obj => {
                         return obj.id === reservation.trip_id

@@ -9,22 +9,15 @@ import '../scss/reserve.scss';
 const Reserve = () => {
   const user = useSelector((state) => state.dravelReducer.user);
   const items = useSelector((state) => state.dravelReducer.items);
+  const token = useSelector((state) => state.dravelReducer.user);
+
 
   const date = useRef();
   const city = useRef();
   const [item, setItem] = useState('');
-  const token = useSelector((state) => state.dravelReducer.user);
   const dispatch = useDispatch();
   const handleAdd = (e) => {
     e.preventDefault();
-    /*dispatch(addreservation({
-      user,
-      itemName: item,
-      date: date.current.value,
-      city: city.current.value,
-    }));
-    setItem('');*/
-    console.log(date)
     axios.post(`https://dravel-api.herokuapp.com/trips/${item}/reservations`,
     {
       date:`${date.current.value}`
