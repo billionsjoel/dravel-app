@@ -1,4 +1,5 @@
 const LOGINUSER = 'LOGIN_USER';
+const LOGOUT = 'LOGOUT';
 const FETCHITEMS = 'FETCH_ITEMS';
 const FETCHRESERVATION = 'FETCH_RESERVATION';
 const ADDITEM = 'ADD_ITEM';
@@ -23,6 +24,11 @@ export const fetchReservation = (payload) => ({
 
 export const loginUser = (payload) => ({
   type: LOGINUSER,
+  payload,
+});
+
+export const logoutUser = (payload) => ({
+  type: LOGOUT,
   payload,
 });
 
@@ -51,6 +57,9 @@ const reducer = (state = initialState, action) => {
 
     case LOGINUSER:
       return { ...state, user: action.payload };
+
+    case LOGOUT:
+      return { ...state, user: '' };
 
     case ADDITEM:
       return { ...state, items: [...state.items, action.payload] };
