@@ -34,7 +34,8 @@ function Splash() {
     })
     .then(function (response) {
       if (response.status === 200) {
-        dispatch(loginUser(response.data.auth_token));
+        console.log(response)
+        dispatch(loginUser(response.headers.authorization));
         userName.current.value=''
       }
 

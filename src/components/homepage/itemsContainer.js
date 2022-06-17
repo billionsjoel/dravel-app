@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
@@ -11,12 +12,10 @@ function ItemsConainer() {
   const items = useSelector((state) => state.dravelReducer.items);
   const token = useSelector((state) => state.dravelReducer.user);
   useEffect(() => {
-    const config ={ headers: { authorization: `Bearer ${token}` } };
-    axios.get('https://dravel-api.herokuapp.com/trips',
-      config
-    )
+    axios.get('https://dravel-api.herokuapp.com/trips')
     .then(function (response) {
       if (response.status === 200) {
+        console.log(response.data);
         dispatch(fetchItems(response.data));
       }
 
