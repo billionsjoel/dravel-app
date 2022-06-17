@@ -23,7 +23,6 @@ function Splash() {
 
   const handleSubmit2 = (event) => {
     event.preventDefault();
-    console.log(`${userName.current.value}@admin.com`)
     axios.post('https://dravel-api.herokuapp.com/users',
     {
       "user": {
@@ -33,12 +32,33 @@ function Splash() {
       }
     })
     .then(function (response) {
+      console.log()
       if (response.status === 200) {
-        console.log(response)
-        dispatch(loginUser(response.headers.authorization));
-        userName.current.value=''
-      }
+        if (response.data.message==='Something went wrong.') {
+          axios.post('https://dravel-api.herokuapp.com/users/sign_in',
+          {
+            "user": {
+                email:`${userName.current.value}@admin.com`,
+                user_name:`${userName.current.value}`,
+                password:`${userName.current.value}1234`
+            }
+          })
+          .then(function (response) {
+            console.log()
+            console.log(response)
+            dispatch(loginUser(response.headers.authorization));
+            userName.current.value=''
+          })
+          .catch(function (error) {
+            console.log(error)
+          });
+        }else {
+          console.log(response)
+          dispatch(loginUser(response.headers.authorization));
+          userName.current.value=''
+        }
 
+      }
     })
     .catch(function (error) {
       console.log(error)
