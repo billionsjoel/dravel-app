@@ -10,7 +10,7 @@ function Navigation() {
     dispatch(logoutUser('logOUUT'))
   }
   return (
-    <div className="menu-container">
+    <div className="menu-container position-fixed">
       <Link to="/" className="logo">Dravel</Link>
       <ul className="menu">
         <li>

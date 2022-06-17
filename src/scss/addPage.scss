@@ -3,6 +3,10 @@
   justify-content: center;
   align-items: center;
 
+  & > .add-item-nav {
+    height: 100vh;
+  }
+
   & > .add-item-form {
     flex-grow: 1;
 
